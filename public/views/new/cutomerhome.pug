@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+    body
+        div.form-row
+            div.col.form-group.col-md-9 
+            div.col.form-group.col-md-3 
+                form(method="post" action="/logout")   
+                    button.btn.btn-dark.btn-block(type="submit") Log out
+        h2 Welcome #{user.fullName}
+        p Here is your information
+        table.table
+            thead.thead-dark
+                tr
+                    th Full name 
+                    td #{user.fullName}
+                tr
+                    th Car
+                    td #{user.cars}
+                tr
+                    th Birthday
+                    td #{user.birthday}
+                tr
+                    th E- mail
+                    td #{user.email}
+                tr
+                    th Gender
+                    td #{user.gender}

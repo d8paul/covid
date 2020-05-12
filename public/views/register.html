@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Boda Boda Banja</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+  <nav class="the-menu-section">
+    <div class="container-fluid">
+      <div class="row">
+         <div class="col-lg-12">
+		     <ol class="the-menux">
+		     	<li><a href="/user/login">Login</a></li>
+          <li><a href="/user/register">Register</a></li>
+		     	<li><a href="/adminpanel">Admin Panel</a></li>
+		     	<li><a href="/user/salesteam">Sales Persons</a></li>
+		     	<li><a href="/customers">Customers</a></li>
+          <li><a href="/customers/register">Add Customers</a></li>
+          <li><a href="/sales/reports">Sales Reports</a></li>
+		     </ol>
+         </div> 
+      </div> 
+    </div>  	
+  </nav> 
+  <div class="container-fluid the-home-bg">
+    <div class="row group clearfix">
+
+      <div class="col-md-1 nopadding"> 
+      </div>
+      <div class="col-md-10"> 
+      <div class="col-md-form-log"> 
+      	    
+      <div class="log-form clearfix group" style="border: 2px solid #fff;">       
+      
+
+      <div class="text-center mb-4 text-center-logo">
+		    	<img src="/images/logo.png" alt="" class="te-log">
+		  </div>      
+		  <h1 class="h3 font-weight-normal"> Register User Account </h1>
+		  <form class="sendformreg" action="javascript:void(0);" method="post" class="clearfix group">
+         
+        <div class="form-row clearfix group">
+          <div class="col-md-4 mb-3">
+           <div class="form-group has-feedback">
+              <label for="validationTooltip01">Current date</label>
+              <input type="text" class="form-control currentDate" 
+                     readonly="on" placeholder="Date" name="date" id="cdate" />
+              <span  class="error_cdate error_clearin"></span>       
+            </div>
+           </div>
+        </div>
+         
+   
+        <div class="form-row clearfix group">
+          <div class="col-md-4 mb-3">
+           <div class="form-group has-feedback">
+              <label for="validationTooltip01">Username</label>
+              <input type="text" class="form-control" placeholder="Username" 
+                     name="username" id="username" />
+              <span  class="error_username error_clearin"></span>       
+            </div>
+           </div>
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+
+          <div class="input-group">
+           <label for="validationTooltip01">User Id</label>
+           <input type="text" class="form-control theiento" 
+                  readonly="on"
+                  id="user_id" 
+                  name="user_id"/>       
+           <div class="input-group-prepend">
+            <span class="input-group-text therefresh generate_id" 
+                  id="validationTooltipUsernamePrepend"> 
+                  Generate Id
+            </span>
+            </div>
+            <span class="error_user_id error_clearin"></span> 
+
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip01">Date of Birth</label>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control"  
+              readonly="on"  placeholder="Date of Birth" 
+              name="date_of_birth" id="dob"  />
+            <span class="error_dob error_clearin"></span>  
+          </div>
+          </div>
+        </div>
+
+        
+        <div class="form-row clearfix group">  
+
+          <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">First Name</label>
+            <input type="text" class="form-control" 
+            placeholder="First Name" name="first_name" id="firstname" />
+           <span class="error_firstname error_clearin"></span>  
+          </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Last Name</label>
+            <input type="text" class="form-control" 
+            placeholder="Last Name" name="last_name" id="lastname" />
+           <span class="error_lastname error_clearin"></span>  
+          </div>
+          </div>
+
+        </div>  
+
+
+
+        <div class="form-row clearfix group">
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Email</label>
+		        <input type="email" class="form-control" 
+            placeholder="Email" name="email" id="email" />
+           <span class="error_email error_clearin"></span>  
+		      </div>
+         </div> 
+
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Phone</label>
+            <input type="text" class="form-control" 
+            placeholder="Phone" name="phone" id="phone" />
+           <span class="error_phone error_clearin"></span>  
+          </div>
+         </div> 
+
+          <div class="col-md-4 mb-3">
+		      <div class="form-group has-feedback">
+          <label for="validationTooltip01">Password</label>
+		        <input type="password" class="form-control" 
+            name="password" id="password" placeholder="Password" />
+           <span class="error_password error_clearin"></span>  
+		      </div>
+        </div> 
+        </div>   
+
+
+        <div class="form-row clearfix group">
+
+          <div class="col-md-4 mb-3">
+
+
+       <div class="form-group has-feedback">
+          <label for="validationTooltip01">User Role</label>
+            <select class="form-control" name="role" id="role">
+              <option value="">  User Role </option>
+              <option value="administrator"> Admin </option>
+              <option value="supervisor">  Supervisor </option>
+              <option value="sales_executive"> Sales executive </option>
+              <option value="customer">   Customer</option>
+            </select> 
+           <span class="error_role error_clearin"></span>  
+          </div>
+
+         </div>
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Supervisor</label>
+             <select class="form-control"  name="supervisor" id="supervisor">
+              <option value="">  User Supervisors </option>
+              <option value="administrator"> Admin </option>
+            </select>
+           <span class="error_supervisor error_clearin"></span>
+          </div>
+        </div>
+
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+            <label for="validationTooltip01">Working Days</label>
+            <input type="text" class="form-control" 
+            name="working_days" id="working_days" placeholder="Working days" />
+            <span class="error_working_days error_clearin"></span>
+          </div>
+         </div>
+        </div>  
+
+        <div class="col-md-12 mb-12">
+          <div class="form-group has-feedback clearfix group">
+          <label for="validationTooltip01">Address</label>
+            <textarea class="form-control" name="address" id="address"></textarea>
+            <span class="error_address error_clearin"></span>
+          </div>
+        </div>  
+
+        <div class="form-row clearfix group">
+        <div class="col-md-8 mb-12">
+          <div class="form-group has-feedback clearfix group">
+            <button type="submit" 
+              class="btn btn-primary btn-block btn-flat submitregister">
+              Submit</button>
+          </div>
+        </div>
+        <div class="col-md-4 mb-12">
+          <div class="form-group has-feedback clearfix group">
+            <button type="submit" 
+              class="btn btn-secondary btn-block btn-flat resetregister">
+              Cancel</button>
+          </div>
+        </div> 
+        </div>
+
+
+		    </form>
+
+
+
+		  </div>  
+      </div>
+
+      <div class="clearfix group"></div>
+      </div>
+
+
+    </div> 
+  </div> 
+  <footer class="the-footer-section">
+     <p>  &copy; Boda Boda Banja  2020 </p>
+  </footer> 
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>

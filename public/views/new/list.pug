@@ -1,0 +1,39 @@
+html
+    head
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+        title List of users
+    body
+        div.form-row
+            div.col.form-group.col-md-9    
+                form.search(action='/list')
+                    div.form-row
+                        div.col-md-8
+                            input.form-control(name='fullName' placeholder="Enter your search term ...")
+                        div.col-md-2
+                            input.btn.btn-dark.btn-block(type="submit")
+            div.col.form-group.col-md-3 
+                form(method="post" action="/logout")   
+                    button.btn.btn-dark.btn-block(type="submit") Log out
+        table.table
+            thead.thead-dark
+                tr
+                    th Full Name
+                    th Car
+                    th Birthday
+                    th Email Address
+                    th Gender
+                    th Role
+                tbody
+                    //- this how you create a loop in PUG
+                    each user in users
+                        tr
+                            td #{user.fullName}
+                            td #{user.cars}
+                            td #{user.birthday}
+                            td #{user.email}
+                            td #{user.gender}
+                            td #{user.role}
+                            td
+                                form(method="post" action='/register/delete')
+                                    input(type="hidden", placeholder="", name="id", value=user._id)
+                                    button.btn.btn-dark.btn-block(type="submit") Delete

@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="container-fluid the-home-bg">
+    <div class="row group clearfix">
+
+      <div class="col-md-2 nopadding"> 
+      </div>
+
+      <div class="col-md-8"> 
+      <div class="col-md-form-log"> 
+            
+     <form class="sendformreg" action="javascript:void(0);" method="post" class="clearfix group">       
+      <div class="clearfix group" style="border: 2px solid #f8f8f8;">       
+      
+      <div class="top-container clearfix group">
+      <div class="text-center mb-4 text-center-logoleft">
+        <div class="black"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+      </div>
+      <div class="text-center mb-4 text-center-logo">
+         <img src="/images/logo.png" alt="" class="te-log">
+      </div>
+       <div class="text-center mb-4 text-center-logoright">
+        <div class="black"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+      </div>
+      </div>   
+
+
+      <h1 class="h3 font-weight-normal"> Ministry of Health </h1>
+      <h2 class="h3 font-weight-normal2"> <b>COVID 19 (CORONA VIRUS)</b> </h2>
+      <h3 class="h3 font-weight-normal3"> Virus Test Registration Form  </h3>
+
+
+
+        <div class="form-row clearfix group">  
+
+          <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Surname Name</label>
+            <input type="text" class="form-control" 
+            name="surname_name" id="surname" />
+
+            <input type="hidden" class="form-control theiento" 
+            name="ids" id="ids" />
+           <span class="error_surname error_clearin"></span>  
+          </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Given Name</label>
+            <input type="text" class="form-control" name="given_name" 
+            id="givenname" />
+           <span class="error_givenname error_clearin"></span>  
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="validationTooltip01">Date of Birth</label>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control"  
+              readonly="on"  placeholder="Date of Birth" 
+              name="date_of_birth" id="dob"  />
+            <span class="error_dob error_clearin"></span>  
+          </div>
+          </div>
+         <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback clearfix group">
+          <label for="validationTooltip01">Residence</label>
+            <input type="text" class="form-control"  name="residence" id="residence"  />
+            <span class="error_residence error_clearin"></span>
+          </div>
+        </div> 
+
+         <div class="col-md-6 mb-3">
+          <label for="validationTooltip01">Occupation</label>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control"  
+              name="occupation" id="occupation"  />
+            <span class="error_occupation error_clearin"></span>  
+          </div>
+          </div>  
+
+         <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback clearfix group">
+          <label for="validationTooltip01">Nationality</label>
+            <input type="text" class="form-control"  
+              name="nationality" id="nationality"  />
+            <span class="error_nationality error_clearin"></span>
+          </div>
+        </div> 
+          
+
+
+         <div class="col-md-12 mb-12">
+          <div class="form-group has-feedback clearfix group">
+          <label for="validationTooltip01">Gender</label>
+          </div>
+        </div>
+        
+         <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback clearfix group">
+            
+           <input type="radio"
+             name="gender" id="gender" value="male" checked style="float: left"/>
+            <label for="validationTooltip01">Male</label>
+
+          </div>
+        </div> 
+
+         <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback clearfix group">
+            
+           <input type="radio" 
+             name="gender" id="gender" value="female" style="float: left"/>
+          <label for="validationTooltip01">Female</label>
+
+          </div>
+        </div> 
+
+
+         <div class="col-md-12 mb-3">
+          <div class="form-group has-feedback clearfix group">
+            
+          <label for="validationTooltip01">Category</label>
+          <select class="form-control"  name="category" id="category">
+              <option value="">  Select Category </option>
+              <option value="Returnee"> Returnee</option>
+              <option value="Contact"> Contact</option>
+              <option value="Alert"> Alert</option>
+              <option value="Volunteer">Volunteer</option>
+            </select>
+            <span class="error_category error_clearin"></span>
+
+          </div>
+        </div> 
+        <div class="col-md-8 mb-3 clearfix" >
+        </div> 
+        <div class="col-md-4 mb-3">
+          <button type="submit" 
+              class="btn btn-primary btn-block btn-flat submitregister">
+              Register</button>
+        </div>
+
+        </div>  
+      </form>
+
+      </div>  
+      </div>
+      <div class="clearfix group"></div>
+      </div>
+    </div> 
+  </div> 
+  <footer class="the-footer-section">
+  </footer> 
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
